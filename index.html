@@ -1,0 +1,444 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>企业网站实例</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/setHomeSetFav.js"></script>
+<script type="text/javascript" src="js/myfocus-2.0.1.min.js" charset="utf-8"></script><!--引入myFocus库-->
+    <script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+myFocus.set({
+    id:'boxID',//焦点图盒子ID
+    pattern:'mF_shutters',//风格应用的名称
+    time:3,//切换时间间隔(秒)
+    trigger:'click',//触发切换模式:'click'(点击)/'mouseover'(悬停)
+    width:1000,//设置图片区域宽度(像素)
+    height:425,//设置图片区域高度(像素)
+    txtHeight:'default'//文字层高度设置(像素),'default'为默认高度，0为隐藏
+});
+</script>
+</head>
+
+<body>
+<div class="top">
+  <div class="top_content">
+    <ul>
+      <li><a href="#">联系我们</a></li>
+      <li><a onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)">加入收藏</a></li>
+      <li><a onclick="SetHome(window.location)" href="javascript:void(0)">设为首页</a></li>
+    </ul>
+  </div>
+</div>
+<!--页面顶端top结束-->
+
+<div class="wrap">
+  <div  class="logo">
+    <div class="logo_left">
+        <div class="logo_left_1"><span>距2016杭州G20峰会还剩:</span></div>
+        <div class="timerbg">
+            <div id="daoend" style="display:none;">本次活动已结束。</div>
+            <div id="dao"><strong id="RemainD"></strong>天<strong id="RemainH"></strong>时<strong id="RemainM"></strong>分<strong id="RemainS"></strong>秒</div>
+        </div>
+
+    </div>
+
+  </div>
+  <!--logo结束-->
+  
+  <div class="nav">
+    <div  class="nav_left"></div>
+    <div class="nav_mid">
+      <div class="nav_mid_left">
+        <ul>
+          <li><a href="#">首页</a></li>
+          <li><a href="list.html">关于G20</a></li>
+          <li><a href="list.html">印象杭州</a></li>
+          <li><a href="list.html">魅力浙江</a></li>
+          <li><a href="list.html">G20之声</a></li>
+          <li><a href="list.html">服务信息</a></li>
+        </ul>
+      </div>
+      <!--nav_mid_left结束-->
+      <div class="nav_mid_right">
+        <form action="" method="post">
+          <input type="text" class="search_text" />
+          <!--<input type="text" class="search_text" x-webkit-speech />-->
+        </form>
+      </div>
+      <!--nav_mid_right结束--> 
+    </div>
+    <!--导航主体nav_mid结束-->
+    <div class="nav_right"></div>
+  </div>
+  <!--nav结束-->
+  
+  <div class="ad">
+    <div id="boxID"><!--焦点图盒子-->
+      <div class="loading"><img src="images/loading.gif" alt="请稍候..." /></div>
+      <!--载入画面(可删除)-->
+      <div class="pic"><!--内容列表(li数目可随意增减)-->
+        <ul>
+          <li><a href="#"><img src="images/02.png" thumb="" alt="" text="详细描述2" /></a></li>
+          <li><a href="#"><img src="images/03.jpg" thumb="" alt="" text="详细描述3" /></a></li>
+          <li><a href="#"><img src="images/04.png" thumb="" alt="" text="详细描述4" /></a></li>
+          <li><a href="#"><img src="images/05.png" thumb="" alt="" text="详细描述5" /></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--ad结束-->
+    <div class="main">
+        <div class="main_left"><div  id="mooc">
+            <!--  头部 -->
+            <h3 id="moocTitle">G20及时新闻<a href="#" target="_self">更多>></a> </h3>
+            <!--  头部结束 -->
+            <!--  中间 -->
+            <div  id="moocBox">
+                <ul id="con1">
+                    <li><a href="#">1.警犬团队出征杭州 为G20峰会保驾护航</a><span>2016-09-01</span></li>
+                    <li><a href="#">2.望海楼:中国的“G20时刻”不容错过</a><span>2016-09-01</span></li>
+                    <li><a href="#">3.义乌邮管局全面启动G20峰会寄递渠道安保工作</a><span>2016-09-01</span></li>
+                    <li><a href="#">4.迎G20峰会,做善美东道主,我们要讲好金华故事。</a><span>2016-09-01</span></li>
+                    <li><a href="#">5.世界电子贸易平台倡议提交G20峰会 </a><span>2016-09-01</span></li>
+                    <li><a href="#">6.朱光耀:关于数字经济的报告提交G20杭州峰会批准</a><span>2016-09-01</span></li>
+                    <li><a href="#">7.从"1+6"圆桌对话到G20峰会,期待更好的全球经济治理</a><span>2016-09-01</span></li>
+                    <li><a href="#">8.因G20峰会停办暂住证明?权威部门澄清:传言不实,别信!</a><span>2016-09-01</span></li>
+                    <li><a href="#">9.迎接G20峰会召开 杭州万余经营者接受社会监督</a><span>2016-09-01</span></li>
+                    <li><a href="#">10.申万宏源:G20峰会渐进环保升级 六大行业龙头受益</a><span>2016-09-01</span></li>
+                    <li><a href="#">11.杭州G20峰会将为经济复苏添动力</a><span>2016-09-01</span></li>
+                    <li><a href="#">12.李保东:中国将从四方面打造杭州G20峰会政治成果</a><span>2016-09-01</span></li>
+                    <li><a href="#">13.2016年温州市运管G20峰会保障工作再部署会议召开</a><span>2016-09-01</span></li>
+                    <li><a href="#">14.黄仁伟:G20杭州峰会应考虑“两个稳定性”问题</a><span>2016-09-01</span></li>
+                    <li><a href="#">15.袁鹏:G20杭州峰会是中国介绍发展理念的重要平台</a><span>2016-09-01</span></li>
+                    <li><a href="#">16.纳智捷G20 峰会官方指定用车正式交付</a><span>2016-09-01</span></li>
+                </ul>
+                <ul id="con2">
+                </ul>
+            </div>
+            <!--  中间结束 -->
+        </div></div>
+        <div class="title_right">
+            <div class="title_right_top">
+
+                <h2 class="titile_left">媒体聚焦</h2>
+                <span class="title_right"><a href="#">More&gt;&gt;</a></span> </div>
+
+
+            <div class="title_right_bottom">
+            <p class="video_content">
+                <embed src="http://player.youku.com/player.php/sid/XNjkzMDE5MTUy/v.swf" allowFullScreen="true" quality="high" width="500" height="270" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+            </p>
+        </div>
+        </div>
+
+
+    </div>
+    <div class="middle">G20历史</div>
+
+
+    <div class="middle_a">
+      <div class="middle_left">
+        <div class="middle_left_a">2009匹兹堡<br><span>2009年于美国匹兹堡。这是G20首次领导人峰会，之前是G20财长会，会议级别得到提升。</span> </div>
+
+        <figure class="test1">
+         <img src="images/16.jpg">
+            <figcaption>
+
+                <h2>确保经济持续复苏 <br>
+                    全球经济再平衡</h2>
+
+            </figcaption>
+            </figure>
+      </div>
+        <div class="middle_middle">
+            <div class="middle_left_a">2011巴黎<br><span>2011年二十国集团(G20)财政部长和央行行长会议实在全球经济尤其是欧债危机深度演化的背景下召开的，吸引了各方关注。</span> </div>
+
+            <figure class="test1">
+                <img src="images/17.jpg">
+
+                <figcaption>
+                <h2>  进一步推动结构改革<br>提高潜在增长率并
+                        <br>扩大就业 </h2>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="middle_right">
+            <div class="middle_left_a">2012莫斯科<br><span>2012年7月19日至20日，G20财长与央行行长会议将在莫斯科召开。</span> </div>
+
+            <figure class="test1">
+                <img src="images/18.jpg">
+                <figcaption>
+
+                    <h2>美联储货币政策
+                        <br>对全球影响以及<br>
+                    国际金融改革
+                    </h2>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="vv"></div>
+        <div class="middle_a">
+            <div class="middle_left">
+                <div class="middle_left_a">2013圣彼得堡 <br><span>2013年于俄罗斯顿举行。G20财长与央行行长会议将在莫斯科召开，会议级别得到提升。</span> </div>
+
+                <figure class="test1">
+                    <img src="images/19.jpg">
+                    <figcaption>
+
+                        <h2>全球气候变暖
+                            <br>对全球的影响<br>
+                           研究可控制的气候方案
+                        </h2>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="middle_middle">
+                <div class="middle_left_a">2014布里斯班<br><span>2014年第20次G20会议在澳大利亚布里斯班举行。会议主要讨论了当前全球经济形势、增长框架、投资和基础设施。</span> </div>
+
+                <figure class="test1">
+                    <img src="images/20.jpg">
+                    <figcaption>
+
+                        <h2>国际金融架构
+                            <br>金融部门改革以及<br>
+                            国际税收合作
+                        </h2>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="middle_right">
+                <div class="middle_left_a">2015安卡拉<br><span>2015年在土耳其安卡拉举行。产能合作、贸易融资、促贸援助、能力建设等方面提出积极务实的合作倡议，推动实现包容、均衡、可持续的发展。</span> </div>
+
+                <figure class="test1">
+                    <img src="images/21.jpg">
+                    <figcaption>
+                        <h2>增强贸易的动力
+                            <br>推进“一带一路”建设<br>
+                            国际产能合作
+                        </h2>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="dd">
+            <div class="dd_1">资料中心</div>
+            <div class="dd_2">
+
+               <div id="as"><span><a href="#">中文手册下载</a></span></a></div>
+                   <div id="ad"><span><a href="#">英文手册下载</a></span></div>
+                       <div id="ae"><span><a href="#">G20图片中心</a></span></div>
+
+
+            </div>
+
+
+            </div>
+            <div class="ed">
+                <div id=ed_f>服务信息</div>
+                <div id=ed_a><a href="#"><img src="images/a01.png"></a></div>
+                <div id=ed_b><a href="#"><img src="images/a02.png"></a></div>
+                <div id=ed_c><a href="#"><img src="images/a03.png"></a></div>
+                <div id=ed_d><a href="#"><img src="images/a04.png"></a></div>
+            </div>
+            <div class="fd">
+                <div class="fd_1"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;印象杭州</p></div>
+                <div class="container">
+                    <img class="pic1" src="images/b01.jpg">
+                    <img class="pic2" src="images/b02.jpg">
+                    <img class="pic3" src="images/b03.jpg">
+                    <img class="pic4" src="images/b04.jpg">
+                    <img class="pic5"  src="images/b05.jpg">
+                    <img class="pic9" src="images/b06.jpg">
+                    <img  class="pic7 "src="images/b07.jpg">
+                    <img class="pic8" src="images/b08.jpg">
+                    <img  class="pic09 "src="images/b09.jpg">
+                    <img class="pic10" src="images/b10.jpg">
+                </div>
+            </div>
+            <div class="gd">
+                <div class="gd_1"><p>
+                    魅力浙江</p></div>
+                <div class="gd_2">
+                    <div class="gd_2_1"><img src="images/c01.jpeg"><figcaption>
+                        <h1>千岛湖</h1>
+                        <p><b>千岛湖，以千岛、秀水、金腰带（岛屿与湖水相接<br>
+                            处环绕着有一 层金黄色的土带，称之名“金腰带”）<br>
+                            为主要特色景观，是中国首批国家级风景名胜区之一<br>
+                            ，千岛湖景区总面积为982平方公里，也是<br>
+                            中国面积最大的森林公园。千岛湖年接待游<br>
+                            客500多万人次，被台湾游客和媒体评为台湾市民赴<br>
+                            大陆旅游的三大热点之一，与北京、长江三峡齐名。</b></p></figcaption></div>
+
+
+                    <div class="gd_2_2">
+                        <figure class="test4">
+                        <img src="images/c02.jpeg">
+                        <figcaption>
+                            <h1>乌镇</h1>
+                            <p><b>乌镇古名乌墩、乌戍。乌镇处于河流冲积平原，<br>
+                                沼多淤积土，故地脉隆起高于四旷，色深而肥<br>
+                                沃，遂有乌墩之名。距乌镇9公里处有一村叫<br>
+                                红墩，其镇志上说：“红墩在镇西，地脉坟起，<br>
+                                厥土赤壤，村以是名。”又旁有一村名紫墩<br>
+                                ，就是因为多紫色石土的缘故。</b></p>
+                            <div></div>
+                        </figcaption>
+                    </figure></div>
+
+                </div>
+
+             <div class="gd_d"></div>
+                <div class="gd_4">
+                    <div class="gd_4_1"><img src="images/c04.jpg"><figcaption>
+                        <h1>西塘</h1>
+                        <p><b>西塘历史悠久，是古代吴越文化<br>
+                            的发祥地之一。在春秋战国时期是<br>
+                            吴越两国的交壤之境，故有“吴根<br>
+                            越角”和“越角人家”之称。</b></p></figcaption></div>
+
+
+                    <div class="gd_4_2">
+                        <figure class="test7">
+                            <img src="images/c05.jpg">
+                            <figcaption>
+                                <h1>莫干山</h1>
+                                <p><b>莫干山是中国四大避暑胜地之一，<br>
+                                    众多的历史名人，既为莫干山赢<br>
+                                    得了巨大的名人效应，更为莫干山<br>
+                                    留下了难以计数的诗文、石刻、事迹。
+                                   </b></p>
+                                <div></div>
+                            </figcaption>
+                        </figure></div>
+                    <div class="gd_4_2">
+                        <figure class="test7">
+                            <img src="images/c06.jpg">
+                            <figcaption>
+                                <h1>浙西大峡谷</h1>
+                                <p><b>地处浙江西北部而名"浙西"。<br>
+                                    峡谷境内山高水急，山为黄山延<br>
+                                    伸的余脉水为钱塘江水系的源流。<br>
+                                    黄牛壁上耕”之誉，与长江三峡<br>
+                                    相比，自有不同诗情画意的领略。 </b></p>
+                                <div></div>
+                            </figcaption>
+                        </figure></div>
+            </div>
+                <div class="gd_g"></div>
+                <div class="gd_2">
+                    <div class="gd_2_1"><img src="images/c03.jpeg"><figcaption>
+                        <h1>雁荡山</h1>
+                        <p><b>雁荡山以山水奇秀闻名，素有“海上名山、寰中绝胜”<br>
+                            之誉，史称中国“东南第一山”[1]  ，主体位于浙江省<br>
+                            温州市东北部海滨，小部在台州市温岭南境。雁荡山形<br>
+                            成于一亿二千万年以前，是环太平洋大陆边缘火山带中<br>
+                            一座日至纪流纹质破火地。历代文人墨客纷至沓来，<br>
+                            谢灵运、沈括、徐霞客、张大千、郭沫若等都留<br>
+                            下了诗篇和墨迹。</b></p></figcaption></div>
+
+
+                    <div class="gd_2_2">
+                        <figure class="test4">
+                            <img src="images/c07.png">
+                            <figcaption>
+                                <h1>仙居神仙居</h1>
+                                <p><b>神仙居为国家5A级景区，位于浙江省台州市仙居<br>
+                                    县县城约20公里的白塔镇南境，诸永高速公路“神<br>
+                                    仙居出口”。景区于1998年开发并营业，2013年9月<br>
+                                    26日，政府投资1.5亿元重新打造新神仙居景区正式<br>
+                                    开业。新的神仙居景区建设了南北两条上下山索道，<br>
+                                    修建悬崖栈道，架设高空索桥，将景区有机连接，<br>
+                                    形成了峡谷探幽区、山顶风光区、溯溪探险区、<br>
+                                    奇文探秘区等许多特色板块</b></p>
+                                <div></div>
+                            </figcaption>
+                        </figure></div>
+
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    var area = document.getElementById('moocBox');
+    var con1 = document.getElementById('con1');
+    var con2 = document.getElementById('con2');
+    var speed = 50;
+    area.scrollTop = 0;
+    con2.innerHTML = con1.innerHTML;//完成克隆效果
+    function scrollUp(){
+        if(area.scrollTop >= con1.scrollHeight) {
+            area.scrollTop = 0;
+        }else{
+            area.scrollTop ++;
+        }
+    }
+    var myScroll = setInterval("scrollUp()",speed);
+    area.onmouseover = function(){
+        clearInterval(myScroll);
+    }
+    area.onmouseout = function(){
+        myScroll = setInterval("scrollUp()",speed);
+    }
+  </script>
+      <script type="text/javascript">
+          var startTime = new Date();
+          startTime.setFullYear(2016, 9, 2);
+          startTime.setHours(23);
+          startTime.setMinutes(59);
+          startTime.setSeconds(59);
+          startTime.setMilliseconds(999);
+          var EndTime=startTime.getTime();
+          function GetRTime(){
+              var NowTime = new Date();
+              var nMS = EndTime - NowTime.getTime();
+              var nD = Math.floor((nMS/(1000 * 60 * 60 * 24)))-30;
+              var nH = Math.floor(nMS/(1000*60*60)) % 24;
+              var nM = Math.floor(nMS/(1000*60)) % 60;
+              var nS = Math.floor(nMS/1000) % 60;
+              if (nMS < 0){
+                  $("#dao").hide();
+                  $("#daoend").show();
+              }else{
+                  $("#dao").show();
+                  $("#daoend").hide();
+                  $("#RemainD").text(nD);
+                  $("#RemainH").text(nH);
+                  $("#RemainM").text(nM);
+                  $("#RemainS").text(nS);
+              }
+          }
+
+          $(document).ready(function () {
+              var timer_rt = window.setInterval("GetRTime()", 1000);
+          });
+      </script>
+
+
+
+</body>
+</html>
